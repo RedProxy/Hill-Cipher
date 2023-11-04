@@ -24,7 +24,7 @@
 - Halaman `process.php` menginisialisasi koneksi ke database MySQL. Informasi koneksi seperti nama host, nama pengguna, kata sandi, dan nama database didefinisikan di halaman ini.
 
 4. **Fungsi Hill Cipher**:
-- Fungsi Hill Cipher terdapat di `hillcipher.php`. Fungsi ini menerima teks plainteks, matriks kunci, dan mode (enksripsi atau dekripsi) sebagai parameter. Fungsi ini bekerja dengan langkah-langkah berikut:
+- Fungsi Hill Cipher terdapat di `hillchiper.php`. Fungsi ini menerima teks plainteks, matriks kunci, dan mode (enksripsi atau dekripsi) sebagai parameter. Fungsi ini bekerja dengan langkah-langkah berikut:
    - Mengubah teks plainteks menjadi huruf kapital dan menghapus spasi (jika ada).
    - Memastikan panjang teks genap dengan menambahkan huruf "X" jika perlu.
    - Memproses teks plainteks per karakter atau per pasangan karakter, tergantung pada mode.
@@ -32,7 +32,7 @@
    - Mengembalikan teks hasil enkripsi atau dekripsi.
 
 5. **Penyimpanan Data**:
-- Halaman `process.php` mengambil data hasil input pengguna, termasuk teks plainteks, matriks kunci, dan mode. Data ini kemudian diproses menggunakan fungsi Hill Cipher dari `hillcipher.php`.
+- Halaman `process.php` mengambil data hasil input pengguna, termasuk teks plainteks, matriks kunci, dan mode. Data ini kemudian diproses menggunakan fungsi Hill Cipher dari `hillchiper.php`.
 - Hasil enkripsi atau dekripsi bersama dengan teks, kunci, dan mode disimpan ke dalam database MySQL menggunakan perintah SQL. Hasil ini akan digunakan untuk ditampilkan di halaman `index.php` dan dapat diakses kembali di masa mendatang.
 
 6. **Tampilan Data**:
